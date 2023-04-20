@@ -47,7 +47,7 @@
         android:layout_marginBottom="10dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="   ID"
+        android:hint="   ID"
         android:textSize="24sp" />
 
     <EditText
@@ -65,7 +65,7 @@
         android:layout_marginBottom="10dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text=" Password"
+        android:hint=" Password"
         android:textSize="24sp" />
 
     <Button
