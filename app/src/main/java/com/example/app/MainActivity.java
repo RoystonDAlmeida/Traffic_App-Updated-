@@ -20,10 +20,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Toolbar top_toolbar=findViewById(R.id.top_toolbar);
-        setSupportActionBar(top_toolbar);
-        Toolbar mid_toolbar=findViewById(R.id.mid_toolbar);
-        setSupportActionBar(mid_toolbar);
+        //Toolbar top_toolbar=findViewById(R.id.top_toolbar);
+        //etSupportActionBar(top_toolbar);
+        //Toolbar mid_toolbar=findViewById(R.id.mid_toolbar);
+        //setSupportActionBar(mid_toolbar);
         Button login=findViewById(R.id.login);
         EditText ID = findViewById(R.id.ID);
         EditText Password = findViewById(R.id.Password);

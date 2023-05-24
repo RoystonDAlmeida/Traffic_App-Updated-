@@ -4,11 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:backgroundTint="@color/white">
+    tools:context=".Add_Edit_Street"
+    android:backgroundTint="@color/white"
+    android:street="@string/Street">
+
     <include
         android:id="@+id/top_toolbar"
-        layout="@layout/toolbar"/>
+        layout="@layout/toolbar" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/mid_toolbar"
@@ -31,52 +33,17 @@
             android:textStyle="bold" />
     </androidx.appcompat.widget.Toolbar>
 
-    <com.google.android.material.textfield.TextInputLayout
+    <Spinner
+        android:id="@+id/spinner_street"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/mid_toolbar"
-        android:hint="Select Street"
-        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
-
-        <AutoCompleteTextView
-            android:id="@+id/street_menu"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:contentDescription="Select Street"
-            android:hint="eg:Chennai"
-            android:minHeight="48dp"
-            android:inputType="none"
-            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-
-    <EditText
-        android:id="@+id/Search"
-        android:layout_width="387dp"
-        android:layout_height="64dp"
-        android:layout_below="@+id/street_menu"
-        android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="7dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="58dp"
-        android:layout_marginEnd="17dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="10dp"
-        android:ems="10"
-        android:hint="Enter City"
-        android:inputType="textPersonName"
-        android:textSize="24sp" />
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="-2dp"
+        android:height="10dp"
+        android:background="@drawable/border"
+        android:spinnerMode="dropdown" />
 
-    <Button
-        android:id="@+id/login"
-        android:layout_width="400dp"
-        android:layout_height="70dp"
-        android:layout_below="@+id/Search"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginRight="10dp"
-        android:backgroundTint="@color/black"
-        android:text="Create City"
-        android:textSize="24sp" />
+
 </RelativeLayout>

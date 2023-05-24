@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">App</string>
+    <string-array name="street">
+        <item>Delhi</item>
+        <item>Mumbai</item>
+        <item>Bangalore</item>
+    </string-array>
 </resources>
