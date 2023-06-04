@@ -77,7 +77,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="30dp"
-                android:ems="10"
+                android:ems="30"
                 android:hint="password"
                 android:inputType="textPassword" />
 
@@ -87,7 +87,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="30dp"
-                android:text="Login" />
+                android:text="Login"
+                android:onClick="onClick"/>
 
             <Button
                 android:id="@+id/register"

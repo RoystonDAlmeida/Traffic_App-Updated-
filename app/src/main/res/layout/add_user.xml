@@ -1,6 +1,175 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".Add_Edit_Division"
+    android:backgroundTint="@color/white">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="651dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="9"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Traffic App"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="#030D4A"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="124dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/logo" />
+
+            </LinearLayout>
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/mid_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:elevation="4dp"
+                android:orientation="vertical"
+                android:paddingTop="2dp"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                tools:layout_editor_absoluteX="73dp"
+                tools:layout_editor_absoluteY="81dp">
+
+                <TextView
+                    android:id="@+id/AdminHome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Create Police User"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:layout_marginTop="50dp"/>
+            </androidx.appcompat.widget.Toolbar>
+            <EditText
+                android:id="@+id/Name"
+                android:text="Name"
+                android:layout_marginTop="50dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+            <EditText
+                android:id="@+id/Email"
+                android:text="Email"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+            <EditText
+                android:id="@+id/Password"
+                android:text="Password"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+            <EditText
+                android:id="@+id/Mobile"
+                android:text="Mobile"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+            <EditText
+                android:id="@+id/Login_ID"
+                android:text="Login ID"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+            <Spinner
+                android:id="@+id/spinner_type"
+                android:layout_width="117dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mid_toolbar"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="-2dp"
+                android:layout_marginLeft="10dp"
+                android:height="10dp"
+                android:background="@drawable/border"
+                android:marginRight="50dp"
+                android:backgroundTint="#6D232222"
+                android:spinnerMode="dropdown"
+                android:text="Type" />
+            <Spinner
+                android:id="@+id/spinner_department"
+                android:layout_width="117dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mid_toolbar"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="-2dp"
+                android:layout_marginLeft="10dp"
+                android:height="10dp"
+                android:background="@drawable/border"
+                android:marginRight="50dp"
+                android:backgroundTint="#6D232222"
+                android:spinnerMode="dropdown"
+                android:text="City" />
+            <EditText
+                android:id="@+id/Rank_ID"
+                android:text="RankID"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+            <EditText
+                android:id="@+id/Station_ID"
+                android:text="Police Station ID No"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+            <EditText
+                android:id="@+id/City"
+                android:text="City"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+            <EditText
+                android:id="@+id/Pincode"
+                android:text="Pincode"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+            <EditText
+                android:id="@+id/District"
+                android:text="District"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+
+            <Button
+                android:id="@+id/Submit"
+                android:layout_width="367dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:text="Submit"
+                android:onClick="Submit"/>
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

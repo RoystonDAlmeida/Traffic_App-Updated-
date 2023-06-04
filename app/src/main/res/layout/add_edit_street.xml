@@ -1,16 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Add_Edit_Street"
-    android:backgroundTint="@color/white"
-    android:street="@string/Street">
+    tools:context=".Add_Edit_City">
 
-    <include
-        android:id="@+id/top_toolbar"
-        layout="@layout/toolbar" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="651dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="9"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Traffic App"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="#030D4A"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="124dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/logo" />
+
+            </LinearLayout>
+
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/mid_toolbar"
@@ -29,21 +68,41 @@
             android:layout_gravity="center"
             android:text="Add Street"
             android:textColor="@color/black"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:textSize="24sp" />
     </androidx.appcompat.widget.Toolbar>
 
-    <Spinner
-        android:id="@+id/spinner_street"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/mid_toolbar"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="49dp"
-        android:layout_marginEnd="-2dp"
-        android:height="10dp"
-        android:background="@drawable/border"
-        android:spinnerMode="dropdown" />
+            <Spinner
+                android:id="@+id/spinner_street"
+                android:layout_width="117dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mid_toolbar"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="-2dp"
+                android:layout_marginLeft="10dp"
+                android:height="10dp"
+                android:background="@drawable/border"
+                android:marginRight="50dp"
+                android:backgroundTint="#6D232222"
+                android:spinnerMode="dropdown"
+                android:text="City" />
+            <EditText
+                android:id="@+id/Search"
+                android:layout_width="367dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:ems="10"
+                android:hint="Search"
+                android:inputType="textPersonName" />
+            <Button
+                android:id="@+id/CreateStreet"
+                android:layout_width="367dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:text="Create Street" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
 
-
-</RelativeLayout>
