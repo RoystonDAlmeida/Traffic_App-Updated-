@@ -51,6 +51,8 @@
 
             </LinearLayout>
 
+
+
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/mid_toolbar"
                 android:layout_width="match_parent"
@@ -73,133 +75,192 @@
                     android:textSize="24sp"
                     android:textStyle="bold" />
             </androidx.appcompat.widget.Toolbar>
-            <Button
-                android:id="@+id/AllTrafficSquad"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_gravity="center"
-                android:layout_marginTop="50dp"
-                android:background="@drawable/border"
-                android:backgroundTint="#8C75B6"
-                android:text="All Traffic Squad"
-                android:textColor="@color/black"
-                android:textSize="12sp"
-                android:textStyle="bold"
-                tools:layout_editor_absoluteX="178dp"
-                tools:layout_editor_absoluteY="406dp" />
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="40sp">
 
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/traffic_squad_img"
+                    app:srcCompat="@drawable/traffic_squad_img"/>
+
+                <Button
+                    android:id="@+id/AllTrafficSquad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+                    android:background="@drawable/border"
+                    android:text="All Traffic Squad"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="178dp"
+                    tools:layout_editor_absoluteY="406dp"
+                    android:onClick="onClick1"/>
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="25sp">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:id="@+id/update_user"
+                app:srcCompat="@drawable/add_user_img"/>
             <Button
-                android:id="@+id/textView3"
+                android:id="@+id/UpdateUser"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
                 android:layout_gravity="center"
-                android:layout_marginTop="25dp"
                 android:background="@drawable/border"
                 android:text="Update User"
-                android:textColor="@color/black"
                 android:textSize="12sp"
                 android:textStyle="bold"
                 tools:layout_editor_absoluteX="48dp"
-                tools:layout_editor_absoluteY="442dp" />
+                tools:layout_editor_absoluteY="442dp"
+                android:onClick="onClick2"/>
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="25sp">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/add_edit_division"
+                    app:srcCompat="@drawable/add_edit_division_img"/>
 
             <Button
-                android:id="@+id/textView5"
+                android:id="@+id/Add_EditDivision"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
                 android:layout_gravity="center"
-                android:layout_marginTop="25dp"
+                android:onClick="onClick3"
                 android:background="@drawable/border"
                 android:text="Add/Edit Division"
-                android:textColor="@color/black"
                 android:textSize="12sp"
                 android:textStyle="bold"
                 tools:layout_editor_absoluteX="121dp"
                 tools:layout_editor_absoluteY="374dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="25sp">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:id="@+id/add_edit_city"
+                app:srcCompat="@drawable/add_edit_city_img"/>
 
             <Button
-                android:id="@+id/textView7"
+                android:id="@+id/Add_EditCity"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
                 android:layout_gravity="center"
-                android:layout_marginTop="25dp"
                 android:background="@drawable/border"
                 android:text="Add/Edit City"
-                android:textColor="@color/black"
                 android:textSize="12sp"
                 android:textStyle="bold"
                 tools:layout_editor_absoluteX="68dp"
-                tools:layout_editor_absoluteY="307dp" />
-
+                tools:layout_editor_absoluteY="307dp"
+                android:onClick="onClick1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="25sp">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:id="@+id/add_edit_street"
+                app:srcCompat="@drawable/add_edit_city_img"/>
             <Button
-                android:id="@+id/textView8"
+                android:id="@+id/Add_EditStreet"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
                 android:layout_gravity="center"
-                android:layout_marginTop="25dp"
                 android:background="@drawable/border"
                 android:text="Add/Edit Street"
-                android:textColor="@color/black"
                 android:textSize="12sp"
                 android:textStyle="bold"
                 tools:layout_editor_absoluteX="56dp"
-                tools:layout_editor_absoluteY="247dp" />
+                tools:layout_editor_absoluteY="247dp"
+                android:onClick="onClick5"/>
+        </LinearLayout>
 
-
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="25sp">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:id="@+id/add_user"
+                app:srcCompat="@drawable/add_user_img"/>
             <Button
-                android:id="@+id/textView4"
-                android:layout_width="396dp"
-                android:layout_height="0dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentBottom="true"
-                android:layout_gravity="center"
-                android:background="@drawable/border"
-                android:text="Category"
-                android:textColor="@color/black"
-                android:textSize="12sp"
-                android:textStyle="bold"
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="156dp" />
-
-            <Button
-                android:id="@+id/textView2"
+                android:id="@+id/AddUser"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
                 android:layout_gravity="center"
-                android:layout_marginTop="25dp"
                 android:background="@drawable/border"
                 android:text="Add User"
-                android:textColor="@color/black"
                 android:textSize="12sp"
                 android:textStyle="bold"
                 tools:layout_editor_absoluteX="146dp"
-                tools:layout_editor_absoluteY="442dp" />
+                tools:layout_editor_absoluteY="442dp"
+                android:onClick="onClick6"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="25sp">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:id="@+id/category"
+                app:srcCompat="@drawable/category_img"/>
             <Button
-                android:id="@+id/categorybtn"
+                android:id="@+id/Category"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
                 android:layout_gravity="center"
-                android:layout_marginTop="25dp"
-                android:background="@android:color="#6A49A5"
                 android:text="Category"
-                android:textColor="@color/black"
                 android:textSize="12sp"
                 android:textStyle="bold"
                 tools:layout_editor_absoluteX="146dp"
-                tools:layout_editor_absoluteY="442dp" />
+                tools:layout_editor_absoluteY="442dp"
+                android:onClick="onClick7"/>
+        </LinearLayout>
 
         </LinearLayout>
     </ScrollView>
