@@ -14,6 +14,8 @@ import android.widget.Button;
 
 
 public class MainActivity extends AppCompatActivity {
+    Button login;
+    EditText  ID,Password;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,9 +26,9 @@ public class MainActivity extends AppCompatActivity {
         //etSupportActionBar(top_toolbar);
         //Toolbar mid_toolbar=findViewById(R.id.mid_toolbar);
         //setSupportActionBar(mid_toolbar);
-        Button login=findViewById(R.id.login);
-        EditText ID = findViewById(R.id.ID);
-        EditText Password = findViewById(R.id.Password);
+        login=findViewById(R.id.login);
+        ID = findViewById(R.id.ID);
+        Password = findViewById(R.id.Password);
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view){

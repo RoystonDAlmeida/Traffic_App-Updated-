@@ -50,22 +50,13 @@
 
             </LinearLayout>
 
-            <Button
-                android:id="@+id/button"
-                android:layout_width="90dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="302dp"
-                android:layout_marginTop="30dp"
-                android:backgroundTint="#F44336"
-                android:text="ADMIN" />
-
             <TextView
                 android:id="@+id/textView9"
                 android:layout_width="367dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="80dp"
-                android:text="LOGIN"
+                android:layout_marginTop="100dp"
+                android:text="ADMIN LOGIN"
                 android:textAlignment="center"
                 android:textColor="#000000"
                 android:textSize="25dp"
