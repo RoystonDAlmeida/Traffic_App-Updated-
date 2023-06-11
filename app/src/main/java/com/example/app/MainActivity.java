@@ -1,20 +1,18 @@
 package com.example.app;
 
 import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AlertDialog.Builder;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import androidx.appcompat.widget.Toolbar;
 import android.widget.EditText;
 import android.view.View;
 import android.widget.Button;
 
 
 public class MainActivity extends AppCompatActivity {
-    Button login;
+    Button login,admin;
     EditText  ID,Password;
 
     @Override
@@ -26,13 +24,22 @@ public class MainActivity extends AppCompatActivity {
         //etSupportActionBar(top_toolbar);
         //Toolbar mid_toolbar=findViewById(R.id.mid_toolbar);
         //setSupportActionBar(mid_toolbar);
-        login=findViewById(R.id.login);
-        ID = findViewById(R.id.ID);
+        login=findViewById(R.id.loginAdmin);
+        admin=findViewById(R.id.admin);
+        ID = findViewById(R.id.username);
         Password = findViewById(R.id.Password);
         login.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view){
+            public void onClick(View view)
+            {
                 openDialog();
+            }
+        });
+
+        admin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                adminPage();
             }
         });
 
@@ -50,6 +57,13 @@ public class MainActivity extends AppCompatActivity {
         });
         builder.create();
         builder.show();
+    }
+
+
+    public void adminPage()
+    {
+        Intent i=new Intent(this,adminLoginActivity.class);
+        startActivity(i);
     }
 }
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -51,7 +51,7 @@
             </LinearLayout>
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/admin"
                 android:layout_width="90dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="302dp"
@@ -72,7 +72,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/ID"
+                android:id="@+id/username"
                 android:layout_width="367dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
@@ -92,7 +92,7 @@
                 android:inputType="textPassword" />
 
             <Button
-                android:id="@+id/login"
+                android:id="@+id/loginAdmin"
                 android:layout_width="367dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
@@ -102,4 +102,4 @@
 
         </LinearLayout>
     </ScrollView>
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

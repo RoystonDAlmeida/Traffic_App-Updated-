@@ -112,7 +112,7 @@
                 android:layout_marginLeft="10dp"
                 android:height="10dp"
                 android:background="@drawable/border"
-                android:marginRight="50dp"
+                android:layout_marginRight="50dp"
                 android:backgroundTint="#6D232222"
                 android:spinnerMode="dropdown"
                 android:text="Type" />
@@ -127,7 +127,7 @@
                 android:layout_marginLeft="10dp"
                 android:height="10dp"
                 android:background="@drawable/border"
-                android:marginRight="50dp"
+                android:layout_marginRight="50dp"
                 android:backgroundTint="#6D232222"
                 android:spinnerMode="dropdown"
                 android:text="City" />
