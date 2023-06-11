@@ -73,31 +73,31 @@
             </androidx.appcompat.widget.Toolbar>
             <EditText
                 android:id="@+id/Name"
-                android:text="Name"
+                android:hint="Name"
                 android:layout_marginTop="50dp"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"/>
             <EditText
                 android:id="@+id/Email"
-                android:text="Email"
+                android:hint="Email"
                 android:layout_marginTop="30dp"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"/>
             <EditText
                 android:id="@+id/Password"
-                android:text="Password"
+                android:hint="Password"
                 android:layout_marginTop="30dp"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"/>
             <EditText
                 android:id="@+id/Mobile"
-                android:text="Mobile"
+                android:hint="Mobile"
                 android:layout_marginTop="30dp"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"/>
             <EditText
                 android:id="@+id/Login_ID"
-                android:text="Login ID"
+                android:hint="Login ID"
                 android:layout_marginTop="30dp"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"/>
@@ -115,7 +115,7 @@
                 android:layout_marginRight="50dp"
                 android:backgroundTint="#6D232222"
                 android:spinnerMode="dropdown"
-                android:text="Type" />
+                android:hint="Type" />
             <Spinner
                 android:id="@+id/spinner_department"
                 android:layout_width="117dp"
@@ -130,34 +130,34 @@
                 android:layout_marginRight="50dp"
                 android:backgroundTint="#6D232222"
                 android:spinnerMode="dropdown"
-                android:text="City" />
+                android:hint="City" />
             <EditText
                 android:id="@+id/Rank_ID"
-                android:text="RankID"
+                android:hint="RankID"
                 android:layout_marginTop="30dp"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"/>
             <EditText
                 android:id="@+id/Station_ID"
-                android:text="Police Station ID No"
+                android:hint="Police Station ID No"
                 android:layout_marginTop="30dp"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"/>
             <EditText
                 android:id="@+id/City"
-                android:text="City"
+                android:hint="City"
                 android:layout_marginTop="30dp"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"/>
             <EditText
                 android:id="@+id/Pincode"
-                android:text="Pincode"
+                android:hint="Pincode"
                 android:layout_marginTop="30dp"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"/>
             <EditText
                 android:id="@+id/District"
-                android:text="District"
+                android:hint="District"
                 android:layout_marginTop="30dp"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"/>
@@ -168,7 +168,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="50dp"
-                android:text="Submit"
+                android:hint="Submit"
                 android:onClick="Submit"/>
         </LinearLayout>
     </ScrollView>

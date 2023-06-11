@@ -11,7 +11,7 @@ public class UserLogin extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.admin_login);
+//        setContentView(R.layout.admin_login);
         Button AllTrafficSquad=findViewById(R.id.AllTrafficSquad);
         Button UpdateUser=findViewById(R.id.UpdateUser);
         Button Add_EditDivision=findViewById(R.id.Add_EditDivision);

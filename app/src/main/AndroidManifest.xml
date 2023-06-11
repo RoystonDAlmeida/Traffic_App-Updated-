@@ -11,11 +11,35 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.App"
         tools:targetApi="31">
-        <activity android:name=".adminLoginActivity"
-            android:label="Second Activity"
+        <activity
+            android:name=".Update_User"
+            android:exported="false" />
+        <activity
+            android:name=".All_Traffic_Squad"
+            android:exported="false" />
+        <activity
+            android:name=".Add_Edit_Division"
+            android:exported="false" />
+        <activity
+            android:name=".Add_Edit_City"
+            android:exported="false" />
+        <activity
+            android:name=".Add_Edit_Street"
+            android:exported="false" />
+        <activity
+            android:name=".Add_User"
+            android:exported="false" />
+        <activity
+            android:name=".Category"
+            android:exported="false" />
+        <activity
+            android:name=".AdminHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".adminLoginActivity"
             android:exported="false"
-            android:parentActivityName=".MainActivity"
-            />
+            android:label="Second Activity"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

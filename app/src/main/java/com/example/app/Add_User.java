@@ -21,6 +21,8 @@ public class Add_User extends AppCompatActivity {
 //        });
 
     }}
+
+
 //    public void openDialog(){
 //        AlertDialog.Builder builder=new AlertDialog.Builder(this);
 //        builder.setTitle("Alert");

@@ -11,6 +11,7 @@ public class Add_Edit_Division extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_edit_division);
-        EditText DeptName=findViewById(R.id.DeptName);
-        Button Create_Department=findViewById(R.id.Create_Department);
-}}
+//        EditText DeptName=findViewById(R.id.DeptName);
+//        Button Create_Department=findViewById(R.id.Create_Department);
+}
+}
