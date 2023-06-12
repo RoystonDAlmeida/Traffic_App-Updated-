@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Add_Edit_Division"
+    tools:context=".Add_User"
     android:backgroundTint="@color/white">
 
     <ScrollView

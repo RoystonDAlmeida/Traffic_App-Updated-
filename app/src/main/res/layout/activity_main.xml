@@ -57,7 +57,8 @@
                 android:layout_marginLeft="302dp"
                 android:layout_marginTop="30dp"
                 android:backgroundTint="#F44336"
-                android:text="ADMIN" />
+                android:text="ADMIN"
+                android:onClick="onClick"/>
 
             <TextView
                 android:id="@+id/textView9"
@@ -98,7 +99,17 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="40dp"
                 android:text="Login"
-                android:onClick="onClick"/>
+                android:onClick="onClick"
+                />
+
+            <Button
+                android:id="@+id/Public_Register"
+                android:layout_width="367dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:text="PUBLIC REGISTER"
+                android:onClick="publicregister"/>
 
         </LinearLayout>
     </ScrollView>

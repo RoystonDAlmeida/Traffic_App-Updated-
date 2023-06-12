@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".All_Traffic_Squad"
+    tools:context=".User_Register"
     android:backgroundTint="@color/white">
 
     <ScrollView
@@ -62,17 +62,62 @@
                 tools:layout_editor_absoluteY="81dp">
 
                 <TextView
-                    android:id="@+id/AdminHome"
+                    android:id="@+id/UserRegister"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="ALL TRAFFIC SQUAD"
+                    android:text="User Register"
                     android:textColor="@color/black"
                     android:textSize="24sp"
-                    android:textStyle="bold"
-                    android:layout_marginTop="20sp"/>
+                    android:layout_marginTop="50dp"/>
             </androidx.appcompat.widget.Toolbar>
-
+            <EditText
+                android:id="@+id/User_Name"
+                android:hint="Name"
+                android:layout_marginTop="50dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+            <EditText
+                android:id="@+id/User_Email"
+                android:hint="Email"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+            <EditText
+                android:id="@+id/User_Password"
+                android:hint="Password"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:inputType="textPassword"/>
+            <EditText
+                android:id="@+id/User_Mobile"
+                android:hint="Mobile"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+            <EditText
+                android:id="@+id/Aadhar"
+                android:hint="Aadhar ID(Login)"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:inputType="phone"/>
+            <Spinner
+                android:id="@+id/spinner_type"
+                android:layout_width="117dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mid_toolbar"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="-2dp"
+                android:layout_marginLeft="10dp"
+                android:height="10dp"
+                android:background="@drawable/border"
+                android:layout_marginRight="50dp"
+                android:backgroundTint="#6D232222"
+                android:spinnerMode="dropdown"
+                android:hint="Type" />
             <Spinner
                 android:id="@+id/Traffic_Division"
                 android:layout_width="117dp"
@@ -89,8 +134,8 @@
                 android:spinnerMode="dropdown"
                 android:hint="Division" />
             <Spinner
-                android:id="@+id/Traffic_Area"
-                android:layout_width="180dp"
+                android:id="@+id/Traffic_City"
+                android:layout_width="117dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/mid_toolbar"
                 android:layout_alignParentEnd="true"
@@ -102,24 +147,48 @@
                 android:layout_marginRight="50dp"
                 android:backgroundTint="#6D232222"
                 android:spinnerMode="dropdown"
-                android:hint="Area" />
+                android:hint="City" />
             <EditText
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="50sp"
-                android:backgroundTint="@color/black"
-                android:background="#1DF4EFEF"
-                android:hint="Search"
-                android:id="@+id/police_search"/>
-            <Button
-                android:layout_width="wrap_content"
+                android:id="@+id/User_Address"
+                android:hint="Address 2"
+                android:layout_marginTop="30dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20sp"
-                android:background="#1BF6EFEF"
-                android:text="Export"
-                android:textColor="@color/black"
-                android:id="@+id/Export"
-                android:textStyle="bold"/>
+                android:layout_width="match_parent"/>
+            <EditText
+                android:id="@+id/User_Pincode"
+                android:hint="Pincode"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+            <EditText
+                android:id="@+id/City"
+                android:hint="City"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+
+            <Spinner
+                android:id="@+id/spinner_gender"
+                android:layout_width="117dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="-2dp"
+                android:layout_marginLeft="10dp"
+                android:height="10dp"
+                android:background="@drawable/border"
+                android:layout_marginRight="50dp"
+                android:backgroundTint="#6D232222"
+                android:spinnerMode="dropdown"
+                android:hint="Male/Female" />
+            <Button
+                android:id="@+id/Submit"
+                android:layout_width="367dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:hint="Submit"
+                android:onClick="Submit"/>
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

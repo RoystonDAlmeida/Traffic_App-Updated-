@@ -83,3 +83,7 @@ public class MainActivity extends AppCompatActivity {
 ////        Log.d("Rathan","this is log msg");
 //    }
 //}
+/////write for public register to direct to(activity_user_register.xml)
+////"Admin" and "Login" Buttons are different."Admin" button directs to activity_admin_home.xml
+////"Login" button should direct to user options which is in activity_user_challan.xml(3 options)
+////Create "publicregister" function that directs to activity_user_register.xml

@@ -65,12 +65,37 @@
                     android:id="@+id/AdminHome"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="20sp"
                     android:layout_gravity="center"
-                    android:text="CATEGORY"
+                    android:text="ADD CATEGORY"
                     android:textColor="@color/black"
                     android:textSize="24sp"
                     android:textStyle="bold" />
+
             </androidx.appcompat.widget.Toolbar>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:backgroundTint="@color/black"
+                android:background="#12ECE9E9"
+                android:hint="Category"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:text="Create Category"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="@color/black"
+                android:background="#12ECE9E9"
+                android:hint="Search"/>
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

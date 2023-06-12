@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".All_Traffic_Squad"
+    tools:context=".Police_Details"
     android:backgroundTint="@color/white">
 
     <ScrollView
@@ -66,15 +66,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="ALL TRAFFIC SQUAD"
+                    android:text="View Police Details"
                     android:textColor="@color/black"
                     android:textSize="24sp"
-                    android:textStyle="bold"
-                    android:layout_marginTop="20sp"/>
+                    android:layout_marginTop="50dp"/>
             </androidx.appcompat.widget.Toolbar>
 
             <Spinner
-                android:id="@+id/Traffic_Division"
+                android:id="@+id/Dept"
                 android:layout_width="117dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/mid_toolbar"
@@ -87,9 +86,9 @@
                 android:layout_marginRight="50dp"
                 android:backgroundTint="#6D232222"
                 android:spinnerMode="dropdown"
-                android:hint="Division" />
+                android:hint="Department" />
             <Spinner
-                android:id="@+id/Traffic_Area"
+                android:id="@+id/Traffic_Division"
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/mid_toolbar"
@@ -102,7 +101,7 @@
                 android:layout_marginRight="50dp"
                 android:backgroundTint="#6D232222"
                 android:spinnerMode="dropdown"
-                android:hint="Area" />
+                android:hint="Traffic Division" />
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -111,15 +110,7 @@
                 android:background="#1DF4EFEF"
                 android:hint="Search"
                 android:id="@+id/police_search"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20sp"
-                android:background="#1BF6EFEF"
-                android:text="Export"
-                android:textColor="@color/black"
-                android:id="@+id/Export"
-                android:textStyle="bold"/>
+
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
